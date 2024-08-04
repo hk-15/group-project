@@ -10,9 +10,9 @@
 <body>
 
 <!--nav bar-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary px-5">
+<nav class="navbar navbar-expand-lg bg-white px-5 sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">@ chips&coffee</a>
+      <a class="navbar-brand" href="#">@ <span class="text-primary">chips&coffee</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,16 +30,8 @@
   <div class="container p-5">
     <div class="row justify-content-center">
         <div class="col-5">
-            <h1>Find the best London has to offer</h1>
+            <h1>Find the best food and drink London has to offer</h1>
             <p>Discover new spots with our weekly recommendations, explore the map and share with your friends, family and loved ones.</p>
-            <div class="row">
-                <div class="col">
-                    button 1: get started
-                </div>
-                <div class="col">
-                    button 2: learn more
-                </div>
-            </div>
         </div>
         <div class="col-5">
             <!--placeholder image but I guess we need a map image here-->
@@ -49,11 +41,11 @@
   </div>
 
   <!--Row of buttons-->
-  <div class="row justify-content-center">
+  <div class="row justify-content-center customlink">
     <div class="col-sm-2 mb-3 mb-sm-0">
       <div class="card text-center">
         <div class="card-body">
-          <a href="./getintouch.html" class="btn btn-primary mb-3">
+          <a href="./getintouch.html" class="btn btn-primary mb-3 customlink">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
                     <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
                 </svg>
@@ -81,12 +73,12 @@
         <div class="card text-center">
           <div class="card-body">
             <!--We should have links to share on social media at the bottom of every page so maybe the share button should take the user to the bottom of the current page?-->
-            <a href="#" class="btn btn-primary mb-3">
+            <a href="#bottom" class="btn btn-primary mb-3">
                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone-fill" viewBox="0 0 16 16">
                     <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25 25 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009l.496.008a64 64 0 0 1 1.51.048m1.39 1.081q.428.032.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a66 66 0 0 1 1.692.064q.491.026.966.06"/>
                  </svg>
             </a>
-            <h5 class="card-title">Share</h5>
+            <h5 class="card-title"><a href="#bottom">Share</a></h5>
             <p class="card-text">Spread the word and help us build the community of food-lovers</p>
           </div>
         </div>
@@ -129,7 +121,7 @@
               </div>
         </div>
         <div class="col-6">
-            <h3>Ramble Cafe, E7</h3>
+            <h3><a class="link-dark" href="#">Ramble Cafe, E7</a></h3>
             <p>
                 <!--Code for a filled-in star for the ratings-->
                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -254,7 +246,7 @@
   </div>
 
   <!--Social media links: have just added logos and not links yet-->
-  <div class="container p-4">
+  <div id="bottom" class="container p-4">
     <div class="row justify-content-center align-items-center">
         <div class="col-2 text-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
