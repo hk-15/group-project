@@ -18,3 +18,10 @@
 .navbar a:hover {
   color: #0d6efd;
 }
+
+/* interactive map */
+#iframemap {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+}
