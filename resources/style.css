@@ -1,9 +1,10 @@
-/* Universal styles:
-Remove border from cards */
+/* Universal styles */
 
 .card {
     border: none;
 };
+
+
 
 /* Custom link styling */
 
@@ -22,12 +23,13 @@ Remove border from cards */
 }
 
 /* Making the site responsive */
+/* Mobile */
 @media only screen and (max-width: 425px) {
   #mapimage {
     display: none;
   }
 
-  .mobileh1 {
+  .responsiveh1 {
     font-size: 2.75rem;
   }
 
@@ -35,8 +37,8 @@ Remove border from cards */
     padding: 1.5rem;
   }
 
-  .mobiledesc {
-    font-size: 1.25rem;;
+  .responsivedesc {
+    font-size: 1.25rem;
   }
 
   .buttons h5 a {
@@ -74,7 +76,19 @@ Remove border from cards */
   }
 }
 
-@media only screen and (min-width: 426px) {
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  #mainbuttons {
+    display: none;
+  }
+
+  #mapimage {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 769px) {
   #altbuttons {
     display: none;
   }
