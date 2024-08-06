@@ -1,4 +1,4 @@
-/* Home page
+/* Universal styles:
 Remove border from cards */
 
 .card {
@@ -21,11 +21,76 @@ Remove border from cards */
   text-decoration: none;
 }
 
+/* Making the site responsive */
+@media only screen and (max-width: 425px) {
+  #mapimage {
+    display: none;
+  }
+
+  .mobileh1 {
+    font-size: 2.75rem;
+  }
+
+  .mobilecontainer {
+    padding: 1.5rem;
+  }
+
+  .mobiledesc {
+    font-size: 1.25rem;;
+  }
+
+  .buttons h5 a {
+    font-size: 1.5rem;
+  }
+
+  #mainbuttons {
+    display: none;
+  }
+
+  .card-text {
+    padding: 0 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  .mobileh3 {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+
+  .mobilep {
+    font-size: 1.25rem;
+  }
+
+  .socialmobile {
+    padding: 1rem;
+  }
+
+  .containerform {
+    padding-top: 0;
+  }
+
+  form {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  #altbuttons {
+    display: none;
+  }
+}
+
 /* Map */
 #iframemap {
   display: block;
   margin: 0 auto;
   padding: 20px 0;
+}
+
+@media only screen and (max-width: 425px) {
+  #iframemap {
+    height: 550px;
+  }
 }
 
 /* Get in touch */
